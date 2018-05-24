@@ -1,0 +1,14 @@
+@import"variables";
+
+body {
+    margin: 0;
+    font-family: $base-font;
+}
+
+@import"nav";
+@import"header";
+@import"main-section";
+@import"portfolio";
+@import"team";
+@import"contact";
+@import"footer";

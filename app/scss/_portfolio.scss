@@ -1,0 +1,85 @@
+@import"variables";
+
+#portfolio {
+    background-color: $portfolio-bg-color;
+
+    .my-class {
+        margin-bottom: 30px;
+
+        .overflow {
+            overflow: hidden;
+            height: 300px;
+
+            .picture {
+                background: center no-repeat;
+                background-size: cover;
+                height: 100%;
+                transition: all 0.4s;
+                &:hover {
+                    transform: scale(1.5);
+                }
+
+                .portfolio-mask {
+                    height: 100%;
+                    background-color: rgba(14, 216, 214,0.6);
+                    opacity: 0;
+                    transition: all 0.4s;
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    .portfolio-content {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            #picture-1 {
+                background-image: url(../img/portfolio/box_of_cookies.jpg);
+            }
+
+            #picture-2 {
+                background-image: url(../img/portfolio/chaotic_paint.jpg);
+            }
+
+            #picture-3 {
+                background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+            }
+
+            #picture-4 {
+                background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+            }
+
+            #picture-5 {
+                background-image: url(../img/portfolio/house_with_blue_doors.jpg)
+            }
+
+            #picture-6 {
+                background-image: url(../img/portfolio/typing_on_laptop.jpg);
+            }
+        }
+
+        .fig-caption {
+            background-color: white;
+            padding: 20px 10px;
+            box-sizing: border-box;
+
+            h4 {
+                font-family: $header-font;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

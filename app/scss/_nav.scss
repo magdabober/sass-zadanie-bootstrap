@@ -1,0 +1,21 @@
+@import"variables";
+
+#main-nav {
+    background-color: transparent;
+    transition: all 0.4s;
+
+    a {
+        color: white;
+        font-weight: 600;
+        transition: all 0.4s;
+        font-family: $header-font;
+    }
+
+    a:hover {
+        color: $button-color;
+    }
+}
+
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214,0.6);
+}

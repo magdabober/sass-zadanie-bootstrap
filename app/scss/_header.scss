@@ -1,0 +1,40 @@
+@import"variables";
+
+#main-header {
+    height: 100vh;
+    background: url(../img/header/pictures_on_the_wall.jpg) center no-repeat;
+    background-size: cover;
+
+    .mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .header-text {
+        color: white;
+        font-family: $header-font;
+
+        h2 {
+            font-style: italic;
+            font-weight: 300
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 70px;
+        }
+
+        .btn {
+            transition: all 0.4s;
+            background-color: $button-color;
+            
+            &:hover {
+                color: $button-color;
+                background-color: white;
+            }
+        }
+    }
+}

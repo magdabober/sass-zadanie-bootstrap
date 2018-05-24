@@ -1,0 +1,43 @@
+@import"variables";
+
+#footer {
+    padding: 10px;
+
+    p {
+        margin: 0;
+        line-height: 50px;
+        font-family: $header-font;
+    }
+
+    .social-media {
+        text-align: center;
+        height: 50px;
+
+        a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: $icons-color;
+            color: white;
+            line-height: 60px;
+            margin: 0 5px;
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: $button-color;
+                color: white;
+            }
+        }
+    }
+
+    .footer-links-outer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a.footer-links {
+            font-family: $header-font;
+            color: black;
+        }
+    }
+}

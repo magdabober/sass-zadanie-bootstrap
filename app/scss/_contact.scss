@@ -1,0 +1,47 @@
+@import"variables";
+
+#contact-us {
+    background: url(../img/footer/world-map.jpg) center no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 0;
+
+    .mask-contact {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        padding: 40px;
+
+        .form-myclass {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .form-control-myclass {
+                padding: 10px 15px;
+                font-family: $header-font;
+                font-weight: 600;
+            }
+        }
+
+        .textarea-myclass {
+            margin: 0;
+
+            textarea {
+                height: 200px;
+            }
+        }
+
+        .form-btn-myclass {
+            margin: 20px 0;
+
+            button {
+                transition: all 0.4s;
+                background-color: $button-color;
+                &:hover {
+                    color: $button-color;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
